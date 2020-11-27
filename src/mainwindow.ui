@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Algorithm</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="AlgorithmWidget" name="algorithmWidget" native="true"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Operators</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="EnvelopeWidget" name="envelopeWidget1" native="true"/>
+        </item>
+        <item>
+         <widget class="EnvelopeWidget" name="envelopeWidget2" native="true"/>
+        </item>
+        <item>
+         <widget class="EnvelopeWidget" name="envelopeWidget3" native="true"/>
+        </item>
+        <item>
+         <widget class="EnvelopeWidget" name="envelopeWidget4" native="true"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Piano</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="PianoWidget" name="pianoWidget" native="true"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Settings</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="SettingsWidget" name="settingsWidget" native="true"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>EnvelopeWidget</class>
+   <extends>QWidget</extends>
+   <header>envelopewidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AlgorithmWidget</class>
+   <extends>QWidget</extends>
+   <header>algorithmwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PianoWidget</class>
+   <extends>QWidget</extends>
+   <header>pianowidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SettingsWidget</class>
+   <extends>QWidget</extends>
+   <header>settingswidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
